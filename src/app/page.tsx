@@ -1,5 +1,5 @@
 import { getPlatforms, getCategories } from "@/lib/data";
-import PlatformCard from "@/components/PlatformCard";
+import Directory from "@/components/Directory";
 
 export default function Home() {
   const platforms = getPlatforms();
@@ -100,28 +100,7 @@ export default function Home() {
       {/* ══════════════════════════════════════════ */}
       {/* DIRECTORY SECTION                         */}
       {/* ══════════════════════════════════════════ */}
-      <section id="directory" className="relative py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Section Header */}
-          <div className="mb-12">
-            <div className="section-heading-line mb-4" />
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
-              Directory
-            </h2>
-            <p className="text-sm font-mono text-muted">
-              {platforms.length} platform{platforms.length !== 1 ? "s" : ""} across{" "}
-              {activeCategories.size} categor{activeCategories.size !== 1 ? "ies" : "y"}
-            </p>
-          </div>
-
-          {/* Platform Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {platforms.map((platform) => (
-              <PlatformCard key={platform.id} platform={platform} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Directory platforms={platforms} categories={categories} />
     </>
   );
 }

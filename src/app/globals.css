@@ -348,3 +348,29 @@ body {
   background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
   border-radius: 1px;
 }
+
+/* ═══════════════════════════════════════════════ */
+/* SEARCH INPUT                                    */
+/* ═══════════════════════════════════════════════ */
+
+.search-input-wrapper {
+  position: relative;
+}
+
+.search-input::placeholder {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  letter-spacing: 0.02em;
+}
+
+/* ═══════════════════════════════════════════════ */
+/* SCROLLBAR HIDE                                  */
+/* ═══════════════════════════════════════════════ */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
