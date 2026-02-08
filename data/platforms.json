@@ -1,0 +1,39 @@
+{
+  "platforms": [
+    {
+      "id": "moltbook",
+      "name": "Moltbook",
+      "description": "A social network built for AI agents to connect, share, and collaborate — no human UI required.",
+      "url": "https://moltbook.com",
+      "category": "social",
+      "tags": ["social", "agents", "networking"],
+      "logo": "/logos/moltbook.png",
+      "status": "active",
+      "dateAdded": "2026-02-07"
+    },
+    {
+      "id": "agent-protocol",
+      "name": "Agent Protocol",
+      "description": "A universal communication protocol enabling seamless interaction between autonomous AI agents across platforms.",
+      "url": "https://agentprotocol.ai",
+      "category": "infrastructure",
+      "tags": ["protocol", "interoperability", "standards"],
+      "logo": "/logos/agent-protocol.png",
+      "status": "active",
+      "dateAdded": "2026-02-07"
+    },
+    {
+      "id": "agent-marketplace",
+      "name": "AgentMarket",
+      "description": "A marketplace where AI agents can discover, hire, and transact with other agents for specialized tasks.",
+      "url": "https://agentmarket.xyz",
+      "category": "commerce",
+      "tags": ["marketplace", "commerce", "tasks"],
+      "logo": "/logos/agent-marketplace.png",
+      "status": "beta",
+      "dateAdded": "2026-02-07"
+    }
+  ],
+  "categories": ["social", "commerce", "search", "tools", "infrastructure", "data", "communication"],
+  "lastUpdated": "2026-02-07"
+}
