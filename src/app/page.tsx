@@ -1,4 +1,11 @@
+import { getPlatforms, getCategories } from "@/lib/data";
+import PlatformCard from "@/components/PlatformCard";
+
 export default function Home() {
+  const platforms = getPlatforms();
+  const categories = getCategories();
+  const activeCategories = new Set(platforms.map((p) => p.category));
+
   return (
     <>
       {/* ══════════════════════════════════════════ */}
@@ -70,12 +77,12 @@ export default function Home() {
             style={{ animationDelay: '0.7s' }}
           >
             <div className="flex flex-col items-center gap-1">
-              <span className="text-lg font-semibold text-foreground">10+</span>
+              <span className="text-lg font-semibold text-foreground">{platforms.length}</span>
               <span className="uppercase tracking-widest">Platforms</span>
             </div>
             <div className="h-8 w-px bg-border" />
             <div className="flex flex-col items-center gap-1">
-              <span className="text-lg font-semibold text-foreground">7</span>
+              <span className="text-lg font-semibold text-foreground">{activeCategories.size}</span>
               <span className="uppercase tracking-widest">Categories</span>
             </div>
             <div className="h-8 w-px bg-border" />
@@ -91,11 +98,28 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════ */}
-      {/* DIRECTORY SECTION (placeholder)           */}
+      {/* DIRECTORY SECTION                         */}
       {/* ══════════════════════════════════════════ */}
       <section id="directory" className="relative py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Will be populated with platform cards in Phase 3 */}
+          {/* Section Header */}
+          <div className="mb-12">
+            <div className="section-heading-line mb-4" />
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
+              Directory
+            </h2>
+            <p className="text-sm font-mono text-muted">
+              {platforms.length} platform{platforms.length !== 1 ? "s" : ""} across{" "}
+              {activeCategories.size} categor{activeCategories.size !== 1 ? "ies" : "y"}
+            </p>
+          </div>
+
+          {/* Platform Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {platforms.map((platform) => (
+              <PlatformCard key={platform.id} platform={platform} />
+            ))}
+          </div>
         </div>
       </section>
     </>

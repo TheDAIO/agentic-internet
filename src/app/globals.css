@@ -306,3 +306,45 @@ body {
     transparent
   );
 }
+
+/* ═══════════════════════════════════════════════ */
+/* PLATFORM CARD                                   */
+/* ═══════════════════════════════════════════════ */
+
+.platform-card {
+  border: 1px solid rgba(30, 41, 59, 0.6);
+  box-shadow:
+    0 0 0 1px rgba(6, 182, 212, 0.03),
+    0 4px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.platform-card:hover {
+  border-color: rgba(6, 182, 212, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(6, 182, 212, 0.08),
+    0 8px 40px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(6, 182, 212, 0.04);
+}
+
+/* ═══════════════════════════════════════════════ */
+/* LINE CLAMP UTILITY                              */
+/* ═══════════════════════════════════════════════ */
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════════ */
+/* SECTION HEADING ACCENT LINE                     */
+/* ═══════════════════════════════════════════════ */
+
+.section-heading-line {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  border-radius: 1px;
+}

@@ -1,5 +1,5 @@
 import type { PlatformsData, Platform, Category } from "@/types/platform";
-import platformsJson from "../../../data/platforms.json";
+import platformsJson from "../../data/platforms.json";
 
 const data = platformsJson as PlatformsData;
 
