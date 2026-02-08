@@ -16,6 +16,22 @@ export const metadata: Metadata = {
   title: "Agentic Internet Directory — Platforms Built for AI Agents",
   description:
     "A curated directory of platforms built for the agentic internet — websites, protocols, and services designed for AI agents, not humans.",
+  openGraph: {
+    title: "Agentic Internet Directory",
+    description:
+      "Discover platforms, protocols, and services built for AI agents — the machine-readable web.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agentic Internet Directory",
+    description:
+      "Discover platforms built for AI agents — the machine-readable web.",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

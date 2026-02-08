@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agentic Internet Directory
 
-## Getting Started
+A curated directory of platforms, protocols, and services built for the agentic internet — websites designed for AI agents, not humans.
 
-First, run the development server:
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router, static export)
+- **Styling**: Tailwind CSS v4
+- **Data**: `data/platforms.json`
+- **Deploy**: Vercel (static)
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adding a Platform
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit `data/platforms.json` and add a new entry:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```json
+{
+  "id": "platform-slug",
+  "name": "Platform Name",
+  "description": "Brief description of the platform.",
+  "url": "https://example.com",
+  "category": "tools",
+  "tags": ["tag1", "tag2"],
+  "logo": "/logos/platform-slug.png",
+  "status": "active",
+  "dateAdded": "2026-02-08"
+}
+```
 
-## Learn More
+Categories: `social`, `commerce`, `search`, `tools`, `infrastructure`, `data`, `communication`
 
-To learn more about Next.js, take a look at the following resources:
+Status options: `active`, `beta`, `concept`, `suggested`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Auto-Discovery
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A GitHub Action runs daily to search X/Twitter for new agentic platforms and opens PRs with suggestions.
 
-## Deploy on Vercel
+**Setup**: Add `X_BEARER_TOKEN` to your repository secrets (requires X API v2 Basic tier).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The workflow can also be triggered manually via `workflow_dispatch`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+```bash
+npm run build   # Static export to out/
+```
+
+Deploy the `out/` directory to Vercel or any static host.
