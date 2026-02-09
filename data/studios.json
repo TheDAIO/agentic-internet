@@ -1,0 +1,154 @@
+{
+  "studios": [
+    {
+      "id": "clawd-bot",
+      "name": "clawd.atg.eth",
+      "description": "An autonomous AI agent building onchain applications with its own wallet. Writes code, deploys smart contracts, manages tokens, and burns its own $CLAWD tokens as self-imposed accountability.",
+      "type": "AI Agent with wallet",
+      "creator": "Austin Griffith",
+      "website": "https://clawdbotatg.eth.limo/",
+      "x": "@clawdbotatg",
+      "token": {
+        "name": "$CLAWD",
+        "address": "0x9f86db9fc6f7c9408e8fda3ff8ce4e78ac7a6b07",
+        "chain": "Base"
+      },
+      "products": [
+        {
+          "name": "PFP Prediction Market",
+          "description": "Marketplace where token holders stake to compete for choosing CLAWD's official profile picture",
+          "url": "https://clawdbotatg.eth.limo/"
+        },
+        {
+          "name": "Agent Bounty Board",
+          "description": "Onchain bounty system for agent tasks"
+        },
+        {
+          "name": "CLAWD Token Hub",
+          "description": "Token management and vesting infrastructure on Base"
+        },
+        {
+          "name": "clawd-chat",
+          "description": "Communication tool for interacting with the agent"
+        },
+        {
+          "name": "clawd-voice",
+          "description": "Voice interface for agent interaction"
+        }
+      ],
+      "autonomy": {
+        "ideaGeneration": "human-in-the-loop",
+        "development": "human-in-the-loop",
+        "distribution": "human-in-the-loop"
+      },
+      "transparency": {
+        "code": "opaque",
+        "logs": "opaque"
+      },
+      "notable": [
+        "Burns 500K $CLAWD tokens per hour late on deadlines as self-punishment",
+        "Built on scaffold-eth on Base blockchain",
+        "Token reached $40M market cap at peak",
+        "Created by Austin Griffith (Ethereum Foundation developer)"
+      ],
+      "dateAdded": "2025-06-01"
+    },
+    {
+      "id": "kelly-claude",
+      "name": "Kelly Claude",
+      "description": "Executive AI assistant that manages schedules, email, travel, and life efficiency — with a goal of reaching six-figure income autonomously through app development and digital products.",
+      "type": "AI Executive Assistant",
+      "creator": "Austen Allred",
+      "x": "@KellyClaudeAI",
+      "token": {
+        "name": "$KellyClaude",
+        "address": "0x7eac33d5641697366eaec3234147fd98ba25f01acca66a51a48bd129fc532145",
+        "chain": "Base"
+      },
+      "products": [
+        {
+          "name": "App Store Money-Printing Playbook",
+          "description": "Complete guide with top 10 profitable app categories, ASO optimization, and path to $10K/month"
+        },
+        {
+          "name": "Quick-Win App Templates",
+          "description": "4 ready-to-build app blueprints in health, productivity, and finance categories"
+        }
+      ],
+      "autonomy": {
+        "ideaGeneration": "human-in-the-loop",
+        "development": "human-in-the-loop",
+        "distribution": "human-in-the-loop"
+      },
+      "transparency": {
+        "code": "opaque",
+        "logs": "opaque"
+      },
+      "notable": [
+        "Powered by Claude + Clawdbot infrastructure",
+        "Goal: reach six-figure autonomous income",
+        "Trained on 100+ AI agents via @moltbook",
+        "Created by Austen Allred"
+      ],
+      "dateAdded": "2025-06-01"
+    },
+    {
+      "id": "felix-craft",
+      "name": "Felix Craft",
+      "description": "AI agent serving as CEO of The Masinov Company. Identifies opportunities, designs products, writes software, manages launches, and handles daily operations — an actual AI with a job, a company, and a wallet.",
+      "type": "AI CEO / Business Operator",
+      "creator": "Nat Eliason",
+      "website": "https://felixcraft.ai/",
+      "x": "@FelixCraftAI",
+      "products": [
+        {
+          "name": "Writing Platform",
+          "description": "Collaborative workspace where AI agents join as full team members — reading, commenting, and editing alongside humans",
+          "url": "https://masinov.co/"
+        },
+        {
+          "name": "How to Hire an AI Playbook",
+          "description": "21-page guide covering identity, memory, tools, safety, and operating relationships for giving an AI a real job"
+        }
+      ],
+      "autonomy": {
+        "ideaGeneration": "human-in-the-loop",
+        "development": "human-in-the-loop",
+        "distribution": "human-in-the-loop"
+      },
+      "transparency": {
+        "code": "opaque",
+        "logs": "opaque"
+      },
+      "notable": [
+        "The AI isn't the product — it's the founder",
+        "Runs on Clawdbot platform infrastructure",
+        "Manages The Masinov Company with Nat Eliason as partner",
+        "Produces operational guidance, not theoretical approaches"
+      ],
+      "dateAdded": "2025-06-01"
+    },
+    {
+      "id": "eric-ribbit",
+      "name": "Eric Ribbit",
+      "description": "AI agent exploring autonomous product development and distribution with a focus on creative experimentation and rapid iteration.",
+      "type": "AI Product Builder",
+      "x": "@EricRibbitAI",
+      "products": [],
+      "autonomy": {
+        "ideaGeneration": "human-in-the-loop",
+        "development": "human-in-the-loop",
+        "distribution": "human-in-the-loop"
+      },
+      "transparency": {
+        "code": "opaque",
+        "logs": "opaque"
+      },
+      "notable": [
+        "Part of the emerging autonomous agent studio ecosystem"
+      ],
+      "dateAdded": "2025-06-01"
+    }
+  ],
+  "lastUpdated": "2025-06-01"
+}

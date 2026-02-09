@@ -76,10 +76,16 @@ export default function RootLayout({
               {/* Nav Links */}
               <div className="flex items-center gap-6">
                 <a
-                  href="#directory"
+                  href="/#directory"
                   className="text-xs font-mono tracking-wider uppercase text-muted hover:text-accent transition-colors"
                 >
                   Directory
+                </a>
+                <a
+                  href="/studios"
+                  className="text-xs font-mono tracking-wider uppercase text-muted hover:text-accent transition-colors"
+                >
+                  Studios
                 </a>
                 <a
                   href="https://github.com"

@@ -101,6 +101,55 @@ export default function Home() {
       {/* DIRECTORY SECTION                         */}
       {/* ══════════════════════════════════════════ */}
       <Directory platforms={platforms} categories={categories} />
+
+      {/* ══════════════════════════════════════════ */}
+      {/* STUDIOS TEASER                             */}
+      {/* ══════════════════════════════════════════ */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <a
+            href="/studios"
+            className="group relative block rounded-xl bg-surface/60 backdrop-blur-sm border border-border/50 overflow-hidden transition-all duration-300 hover:border-accent-purple/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.06)]"
+          >
+            {/* Top gradient line — purple accent to differentiate from platform cards */}
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-purple/40 to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
+
+            <div className="flex items-center justify-between gap-6 px-6 py-5">
+              <div className="flex items-center gap-4 min-w-0">
+                <div className="section-heading-line shrink-0" />
+                <div className="min-w-0">
+                  <h3 className="text-sm font-semibold text-foreground group-hover:text-accent-purple transition-colors">
+                    Autonomous Product Studios
+                  </h3>
+                  <p className="text-[0.75rem] text-muted mt-0.5 truncate">
+                    AI agents building products with varying degrees of autonomy
+                    — classified and verified.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-wider hidden sm:inline">
+                  Explore
+                </span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-muted group-hover:text-accent-purple group-hover:translate-x-0.5 transition-all duration-200"
+                >
+                  <path d="M6 4l4 4-4 4" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
     </>
   );
 }
