@@ -19,7 +19,7 @@ function AutonomyDot({ level }: { level: AutonomyLevel }) {
   return (
     <div className="flex items-center gap-1.5">
       <span className={`h-2 w-2 rounded-full ${config.dot} shrink-0`} />
-      <span className="text-[0.6rem] font-mono text-muted/70 uppercase tracking-wider">
+      <span className="text-xs font-mono text-muted/70 uppercase tracking-wider">
         {config.label}
       </span>
     </div>
@@ -31,7 +31,7 @@ function VisibilityDot({ level }: { level: Visibility }) {
   return (
     <div className="flex items-center gap-1.5">
       <span className={`h-2 w-2 rounded-full ${config.dot} shrink-0`} />
-      <span className={`text-[0.6rem] font-mono uppercase tracking-wider ${config.text}/70`}>
+      <span className={`text-xs font-mono uppercase tracking-wider ${config.text}/70`}>
         {config.label}
       </span>
     </div>
@@ -51,28 +51,28 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
       <table className="w-full text-left">
         <thead>
           <tr className="border-b border-border/50">
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 pr-4 font-normal">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 pr-4 font-normal">
               Studio
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
               Idea
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
               Dev
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
               Distro
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
               Code
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal text-center">
               Logs
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal hidden md:table-cell">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 px-4 font-normal hidden md:table-cell">
               Token
             </th>
-            <th className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-widest py-3 pl-4 font-normal">
+            <th className="text-xs font-mono text-muted/60 uppercase tracking-widest py-3 pl-4 font-normal">
               Links
             </th>
           </tr>
@@ -85,11 +85,11 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
             >
               {/* Studio name + creator */}
               <td className="py-3 pr-4">
-                <p className="text-[0.85rem] font-semibold text-foreground whitespace-nowrap">
+                <p className="text-sm font-semibold text-foreground whitespace-nowrap">
                   {studio.name}
                 </p>
                 {studio.creator && (
-                  <p className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-wider">
+                  <p className="text-xs font-mono text-muted/60 uppercase tracking-wider">
                     by {studio.creator}
                   </p>
                 )}
@@ -127,7 +127,7 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
                     href={tokenUrl(studio.token.address, studio.token.chain)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[0.6rem] font-mono text-accent-purple/80 hover:text-accent-purple transition-colors uppercase tracking-wider whitespace-nowrap"
+                    className="inline-flex items-center gap-1 text-xs font-mono text-accent-purple/80 hover:text-accent-purple transition-colors uppercase tracking-wider whitespace-nowrap"
                   >
                     {studio.token.name}
                     {studio.token.chain && (
@@ -137,7 +137,7 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
                     )}
                   </a>
                 ) : (
-                  <span className="text-[0.6rem] font-mono text-muted/30">
+                  <span className="text-xs font-mono text-muted/30">
                     —
                   </span>
                 )}
@@ -151,7 +151,7 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
                       href={studio.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[0.6rem] font-mono text-muted/50 hover:text-accent transition-colors uppercase tracking-wider"
+                      className="text-xs font-mono text-muted/50 hover:text-accent transition-colors uppercase tracking-wider"
                     >
                       Web
                     </a>
@@ -164,8 +164,8 @@ export default function StudiosTable({ studios }: { studios: Studio[] }) {
                     aria-label={`${studio.name} on X`}
                   >
                     <svg
-                      width="12"
-                      height="12"
+                      width="14"
+                      height="14"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       className="shrink-0"

@@ -95,12 +95,71 @@ export default function StudiosPage() {
       </section>
 
       {/* ══════════════════════════════════════════ */}
-      {/* WHAT WE TRACK & WHY                       */}
+      {/* CLASSIFICATION LEGEND + STUDIOS TABLE       */}
       {/* ══════════════════════════════════════════ */}
-      <section className="relative py-16">
+      <section className="relative py-10">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           {/* Section header */}
-          <div className="mb-12">
+          <div className="mb-6">
+            <div className="section-heading-line mb-4" />
+            <h2 className="text-2xl font-bold tracking-tight">Studios</h2>
+          </div>
+
+          {/* Legend */}
+          <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-lg border border-border/40 bg-surface/40 px-4 py-3">
+            <span className="text-[0.65rem] font-mono text-muted/50 uppercase tracking-widest mr-1">
+              Key
+            </span>
+
+            {/* Autonomy levels */}
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-slate-500" />
+              <span className="text-xs font-mono text-muted uppercase tracking-wider">
+                Human-led
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+              <span className="text-xs font-mono text-muted uppercase tracking-wider">
+                HITL
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              <span className="text-xs font-mono text-muted uppercase tracking-wider">
+                Autonomous
+              </span>
+            </div>
+
+            <span className="hidden sm:block h-4 w-px bg-border/50" />
+
+            {/* Transparency levels */}
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              <span className="text-xs font-mono text-muted uppercase tracking-wider">
+                Visible
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-slate-500" />
+              <span className="text-xs font-mono text-muted uppercase tracking-wider">
+                Opaque
+              </span>
+            </div>
+          </div>
+
+          {/* Studios table */}
+          <StudiosTable studios={studios} />
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════ */}
+      {/* WHAT WE TRACK & WHY                       */}
+      {/* ══════════════════════════════════════════ */}
+      <section className="relative py-10">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          {/* Section header */}
+          <div className="mb-8">
             <div className="section-heading-line mb-4" />
             <h2 className="text-2xl font-bold tracking-tight mb-2">
               What We Track & Why
@@ -112,8 +171,8 @@ export default function StudiosPage() {
           </div>
 
           {/* ── Autonomy by Department ── */}
-          <div className="mb-10">
-            <h3 className="text-xs font-mono text-muted uppercase tracking-widest mb-5">
+          <div className="mb-6">
+            <h3 className="text-sm font-mono text-muted uppercase tracking-widest mb-4">
               Autonomy by Department
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -142,7 +201,7 @@ export default function StudiosPage() {
                       Idea Generation
                     </h4>
                   </div>
-                  <p className="text-[0.8rem] leading-relaxed text-secondary">
+                  <p className="text-sm leading-relaxed text-secondary">
                     Can the agent come up with its own product ideas, or does a
                     human decide what to build? This is where creative autonomy
                     starts.
@@ -176,7 +235,7 @@ export default function StudiosPage() {
                       Development
                     </h4>
                   </div>
-                  <p className="text-[0.8rem] leading-relaxed text-secondary">
+                  <p className="text-sm leading-relaxed text-secondary">
                     Can the agent write, test, and deploy code on its own? Most
                     agents claim this — we verify it.
                   </p>
@@ -208,7 +267,7 @@ export default function StudiosPage() {
                       Distribution
                     </h4>
                   </div>
-                  <p className="text-[0.8rem] leading-relaxed text-secondary">
+                  <p className="text-sm leading-relaxed text-secondary">
                     Can the agent market, sell, and distribute what it builds?
                     The hardest department to automate — and where most studios
                     still need humans.
@@ -224,7 +283,7 @@ export default function StudiosPage() {
             <div className="platform-card relative rounded-xl bg-surface/80 backdrop-blur-sm overflow-hidden">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
               <div className="p-5">
-                <h3 className="text-xs font-mono text-muted uppercase tracking-widest mb-4">
+                <h3 className="text-sm font-mono text-muted uppercase tracking-widest mb-4">
                   Autonomy Levels
                 </h3>
                 <div className="flex flex-col gap-4">
@@ -234,7 +293,7 @@ export default function StudiosPage() {
                       <p className="text-sm font-medium text-foreground">
                         Human-led
                       </p>
-                      <p className="text-[0.75rem] text-muted leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         A human makes the decisions, the agent assists
                       </p>
                     </div>
@@ -245,7 +304,7 @@ export default function StudiosPage() {
                       <p className="text-sm font-medium text-foreground">
                         Human-in-the-loop
                       </p>
-                      <p className="text-[0.75rem] text-muted leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         The agent proposes and executes, a human approves or
                         guides
                       </p>
@@ -257,7 +316,7 @@ export default function StudiosPage() {
                       <p className="text-sm font-medium text-foreground">
                         Fully autonomous
                       </p>
-                      <p className="text-[0.75rem] text-muted leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         The agent operates independently, no human required
                       </p>
                     </div>
@@ -270,10 +329,10 @@ export default function StudiosPage() {
             <div className="platform-card relative rounded-xl bg-surface/80 backdrop-blur-sm overflow-hidden">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
               <div className="p-5">
-                <h3 className="text-xs font-mono text-muted uppercase tracking-widest mb-4">
+                <h3 className="text-sm font-mono text-muted uppercase tracking-widest mb-4">
                   Transparency
                 </h3>
-                <p className="text-[0.75rem] text-muted leading-relaxed mb-4">
+                <p className="text-sm text-muted leading-relaxed mb-4">
                   We track visibility separately for <span className="text-foreground font-medium">Code</span> and <span className="text-foreground font-medium">Logs</span>. Each can be:
                 </p>
                 <div className="flex flex-col gap-4">
@@ -283,7 +342,7 @@ export default function StudiosPage() {
                       <p className="text-sm font-medium text-foreground">
                         Visible
                       </p>
-                      <p className="text-[0.75rem] text-muted leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         Open and verifiable — you can read it yourself
                       </p>
                     </div>
@@ -294,7 +353,7 @@ export default function StudiosPage() {
                       <p className="text-sm font-medium text-foreground">
                         Opaque
                       </p>
-                      <p className="text-[0.75rem] text-muted leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         No way to verify — you have to trust what they say
                       </p>
                     </div>
@@ -303,65 +362,6 @@ export default function StudiosPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════ */}
-      {/* CLASSIFICATION LEGEND + STUDIOS GRID       */}
-      {/* ══════════════════════════════════════════ */}
-      <section className="relative py-16">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          {/* Section header */}
-          <div className="mb-8">
-            <div className="section-heading-line mb-4" />
-            <h2 className="text-2xl font-bold tracking-tight">Studios</h2>
-          </div>
-
-          {/* Legend */}
-          <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-lg border border-border/40 bg-surface/40 px-4 py-3">
-            <span className="text-[0.55rem] font-mono text-muted/50 uppercase tracking-widest mr-1">
-              Key
-            </span>
-
-            {/* Autonomy levels */}
-            <div className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-slate-500" />
-              <span className="text-[0.6rem] font-mono text-muted uppercase tracking-wider">
-                Human-led
-              </span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
-              <span className="text-[0.6rem] font-mono text-muted uppercase tracking-wider">
-                HITL
-              </span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              <span className="text-[0.6rem] font-mono text-muted uppercase tracking-wider">
-                Autonomous
-              </span>
-            </div>
-
-            <span className="hidden sm:block h-4 w-px bg-border/50" />
-
-            {/* Transparency levels */}
-            <div className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              <span className="text-[0.6rem] font-mono text-muted uppercase tracking-wider">
-                Visible
-              </span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-slate-500" />
-              <span className="text-[0.6rem] font-mono text-muted uppercase tracking-wider">
-                Opaque
-              </span>
-            </div>
-          </div>
-
-          {/* Studios table */}
-          <StudiosTable studios={studios} />
         </div>
       </section>
     </>
