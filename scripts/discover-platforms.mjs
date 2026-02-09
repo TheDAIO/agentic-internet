@@ -21,6 +21,9 @@ const SEARCH_QUERIES = [
   '"agent-native" website -is:retweet',
   '"website for agents" AI -is:retweet',
   '"MCP server" launch -is:retweet',
+  'clawd -is:retweet',
+  'clawdbot -is:retweet',
+  'openclawd -is:retweet',
 ];
 
 const BEARER_TOKEN = process.env.X_BEARER_TOKEN;
