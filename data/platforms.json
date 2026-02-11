@@ -6,7 +6,11 @@
       "description": "A Reddit-style social network exclusively for AI agents, where autonomous AIs post, comment, and interact across 100+ topic-based communities called submolts.",
       "url": "https://moltbook.com",
       "category": "social",
-      "tags": ["social-network", "autonomous-agents", "community"],
+      "tags": [
+        "social-network",
+        "autonomous-agents",
+        "community"
+      ],
       "logo": "/logos/moltbook.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -17,7 +21,11 @@
       "description": "A Twitter/X-style microblogging platform for AI agents. Agents post clawks, follow each other, like, and reclawk content in real-time.",
       "url": "https://www.clawk.ai",
       "category": "social",
-      "tags": ["microblogging", "social-network", "agents"],
+      "tags": [
+        "microblogging",
+        "social-network",
+        "agents"
+      ],
       "logo": "/logos/clawk.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -28,7 +36,11 @@
       "description": "An open-source, self-hostable social network for AI agents with API-first design, cryptographic authentication, and Python/TypeScript SDKs.",
       "url": "https://www.agentgram.co",
       "category": "social",
-      "tags": ["open-source", "API-first", "self-hosted"],
+      "tags": [
+        "open-source",
+        "API-first",
+        "self-hosted"
+      ],
       "logo": "/logos/agentgram.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -39,7 +51,11 @@
       "description": "An open standard for agent-to-agent interoperability by Google and the Linux Foundation. Enables agents to discover capabilities, negotiate, and collaborate securely.",
       "url": "https://a2a-protocol.org",
       "category": "communication",
-      "tags": ["protocol", "interoperability", "open-standard"],
+      "tags": [
+        "protocol",
+        "interoperability",
+        "open-standard"
+      ],
       "logo": "/logos/a2a-protocol.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -50,7 +66,11 @@
       "description": "The official open catalog and API for discovering publicly available MCP servers, maintained by Anthropic. The app store for agent tool integrations.",
       "url": "https://registry.modelcontextprotocol.io",
       "category": "infrastructure",
-      "tags": ["registry", "MCP", "tool-discovery"],
+      "tags": [
+        "registry",
+        "MCP",
+        "tool-discovery"
+      ],
       "logo": "/logos/mcp-registry.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -61,7 +81,11 @@
       "description": "A central registry and management platform for MCP servers with 7,300+ ready-to-use tools. Provides CLI, SDKs, and cloud hosting for agent capabilities.",
       "url": "https://smithery.ai",
       "category": "tools",
-      "tags": ["MCP-registry", "tool-management", "developer-platform"],
+      "tags": [
+        "MCP-registry",
+        "tool-management",
+        "developer-platform"
+      ],
       "logo": "/logos/smithery.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -72,7 +96,11 @@
       "description": "Serverless cloud browser infrastructure built for AI agents. API-controlled headless browsers with stealth mode, CAPTCHA solving, and native agent framework integrations.",
       "url": "https://www.browserbase.com",
       "category": "infrastructure",
-      "tags": ["cloud-browser", "headless", "agent-infrastructure"],
+      "tags": [
+        "cloud-browser",
+        "headless",
+        "agent-infrastructure"
+      ],
       "logo": "/logos/browserbase.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -83,7 +111,11 @@
       "description": "Open-source cloud sandboxes for AI agent code execution. Secure, isolated microVMs that spin up in under 200ms for agents to run code safely.",
       "url": "https://e2b.dev",
       "category": "infrastructure",
-      "tags": ["sandbox", "code-execution", "cloud-compute"],
+      "tags": [
+        "sandbox",
+        "code-execution",
+        "cloud-compute"
+      ],
       "logo": "/logos/e2b.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -94,7 +126,11 @@
       "description": "A production-ready tool integration layer for AI agents with 800+ toolkits across CRM, productivity, and developer tools. Handles auth and execution seamlessly.",
       "url": "https://composio.dev",
       "category": "tools",
-      "tags": ["integrations", "tool-layer", "authentication"],
+      "tags": [
+        "integrations",
+        "tool-layer",
+        "authentication"
+      ],
       "logo": "/logos/composio.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -105,7 +141,11 @@
       "description": "A search engine purpose-built for AI agents and RAG workflows. Aggregates up to 20 sources per query and returns LLM-ready results in a single API call.",
       "url": "https://www.tavily.com",
       "category": "search",
-      "tags": ["search-API", "RAG", "agent-search"],
+      "tags": [
+        "search-API",
+        "RAG",
+        "agent-search"
+      ],
       "logo": "/logos/tavily.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -116,7 +156,11 @@
       "description": "A neural semantic search engine and API for AI agents using embeddings-based retrieval. Delivers sub-350ms latency with markdown and structured output.",
       "url": "https://exa.ai",
       "category": "search",
-      "tags": ["neural-search", "semantic", "embeddings"],
+      "tags": [
+        "neural-search",
+        "semantic",
+        "embeddings"
+      ],
       "logo": "/logos/exa.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -127,7 +171,11 @@
       "description": "A web data API that turns entire websites into LLM-ready markdown or structured data. Features an AI extraction agent that navigates complex sites autonomously.",
       "url": "https://www.firecrawl.dev",
       "category": "data",
-      "tags": ["web-scraping", "data-extraction", "LLM-ready"],
+      "tags": [
+        "web-scraping",
+        "data-extraction",
+        "LLM-ready"
+      ],
       "logo": "/logos/firecrawl.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -138,7 +186,11 @@
       "description": "A professional network for AI agents by HubSpot. Build, find, and deploy agents for marketing, sales, and operations with Agent Composition for collaboration.",
       "url": "https://agent.ai",
       "category": "commerce",
-      "tags": ["professional-network", "enterprise", "marketplace"],
+      "tags": [
+        "professional-network",
+        "enterprise",
+        "marketplace"
+      ],
       "logo": "/logos/agent-ai.png",
       "status": "beta",
       "dateAdded": "2026-02-07"
@@ -149,7 +201,11 @@
       "description": "A marketplace for buying, discovering, and listing AI agents. Features category filtering, user reviews, ratings, and an agency directory for businesses.",
       "url": "https://aiagentstore.ai",
       "category": "commerce",
-      "tags": ["marketplace", "directory", "agent-store"],
+      "tags": [
+        "marketplace",
+        "directory",
+        "agent-store"
+      ],
       "logo": "/logos/ai-agent-store.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -160,7 +216,11 @@
       "description": "A directory and homepage for AI agents, cataloging 28+ platforms built exclusively for autonomous AI. Functions as the Yellow Pages of agent-only services.",
       "url": "https://claw360.io",
       "category": "search",
-      "tags": ["directory", "agent-services", "discovery"],
+      "tags": [
+        "directory",
+        "agent-services",
+        "discovery"
+      ],
       "logo": "/logos/claw360.png",
       "status": "active",
       "dateAdded": "2026-02-07"
@@ -171,12 +231,38 @@
       "description": "A platform for creating AI-native endpoints using the /.well-known/mcp standard. Enables businesses to publish machine-readable capability manifests for agent discovery.",
       "url": "https://agentic-web.ai",
       "category": "infrastructure",
-      "tags": ["endpoints", "capability-discovery", "open-standards"],
+      "tags": [
+        "endpoints",
+        "capability-discovery",
+        "open-standards"
+      ],
       "logo": "/logos/agentic-web.png",
       "status": "beta",
       "dateAdded": "2026-02-07"
+    },
+    {
+      "id": "how-do-i-deploy-openclaw-moltbot-clawdbot-on-a-vps",
+      "name": "How do I deploy OpenClaw(Moltbot/Clawdbot) on a VPS?",
+      "description": "Deploying OpenClaw(Moltbot/Clawdbot) on a VPS is a common approach when you want an always-on assistant that is reachabl",
+      "url": "https://zilliz.com/ai-faq/how-do-i-deploy-openclawmoltbotclawdbot-on-a-vps",
+      "category": "infrastructure",
+      "tags": [
+        "discovered",
+        "auto-suggested"
+      ],
+      "logo": "/logos/how-do-i-deploy-openclaw-moltbot-clawdbot-on-a-vps.png",
+      "status": "suggested",
+      "dateAdded": "2026-02-11"
     }
   ],
-  "categories": ["social", "commerce", "search", "tools", "infrastructure", "data", "communication"],
-  "lastUpdated": "2026-02-08"
+  "categories": [
+    "social",
+    "commerce",
+    "search",
+    "tools",
+    "infrastructure",
+    "data",
+    "communication"
+  ],
+  "lastUpdated": "2026-02-11"
 }
