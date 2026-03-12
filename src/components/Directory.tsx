@@ -93,7 +93,7 @@ export default function Directory({ platforms, categories }: DirectoryProps) {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
             Directory
           </h2>
-          <p className="text-sm font-mono text-muted">
+          <p className="text-base font-mono text-secondary">
             {hasFilters ? (
               <>
                 Showing{" "}
@@ -141,7 +141,7 @@ export default function Directory({ platforms, categories }: DirectoryProps) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search platforms..."
-                className="search-input w-full bg-surface/60 border border-border/60 rounded-lg pl-10 pr-10 py-3 text-sm text-foreground placeholder:text-muted/50 font-mono focus:outline-none focus:border-accent/40 focus:shadow-[0_0_0_1px_rgba(6,182,212,0.15),0_0_20px_rgba(6,182,212,0.06)] transition-all duration-300"
+                className="search-input w-full bg-surface/60 border border-border/60 rounded-lg pl-10 pr-10 py-3.5 text-base text-foreground placeholder:text-muted/70 font-mono focus:outline-none focus:border-accent/40 focus:shadow-[0_0_0_1px_rgba(6,182,212,0.15),0_0_20px_rgba(6,182,212,0.06)] transition-all duration-300"
               />
 
               {searchQuery && (
@@ -173,7 +173,7 @@ export default function Directory({ platforms, categories }: DirectoryProps) {
             {/* All button */}
             <button
               onClick={() => setActiveCategory(null)}
-              className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+              className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.72rem] font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                 activeCategory === null
                   ? "text-accent border-accent/40 bg-accent/10 shadow-sm shadow-accent/10"
                   : "text-muted/70 border-border/40 hover:border-accent/20 hover:text-muted"
@@ -189,7 +189,7 @@ export default function Directory({ platforms, categories }: DirectoryProps) {
                 <button
                   key={cat}
                   onClick={() => toggleCategory(cat)}
-                  className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+                  className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.72rem] font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                     isActive ? colors.active : colors.base
                   }`}
                 >
@@ -202,7 +202,7 @@ export default function Directory({ platforms, categories }: DirectoryProps) {
             {hasFilters && (
               <button
                 onClick={clearFilters}
-                className="shrink-0 ml-auto flex items-center gap-1.5 rounded-full border border-border/30 px-3 py-1.5 text-[0.6rem] font-mono text-muted/60 uppercase tracking-wider hover:text-foreground hover:border-border/60 transition-all duration-200 cursor-pointer"
+                className="shrink-0 ml-auto flex items-center gap-1.5 rounded-full border border-border/30 px-3 py-1.5 text-[0.72rem] font-mono text-muted uppercase tracking-wider hover:text-foreground hover:border-border/60 transition-all duration-200 cursor-pointer"
               >
                 <svg
                   width="10"

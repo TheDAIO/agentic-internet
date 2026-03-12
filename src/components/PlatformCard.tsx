@@ -46,7 +46,7 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 group/link"
             >
-              <h3 className="text-[0.95rem] font-semibold text-foreground truncate group-hover/link:text-accent transition-colors">
+              <h3 className="text-[1.02rem] font-semibold text-foreground truncate group-hover/link:text-accent transition-colors">
                 {platform.name}
               </h3>
               <svg
@@ -70,13 +70,13 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
                 <span
                   className={`h-1.5 w-1.5 rounded-full ${status.color} ${status.shadow} shadow-sm ${platform.status === "suggested" ? "animate-pulse" : ""}`}
                 />
-                <span className="text-[0.65rem] font-mono text-muted uppercase tracking-wider">
+                <span className="text-[0.72rem] font-mono text-muted uppercase tracking-wider">
                   {status.label}
                 </span>
               </span>
               <span className="text-border">·</span>
               <span
-                className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[0.6rem] font-mono uppercase tracking-wider ${categoryStyle}`}
+                className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[0.7rem] font-mono uppercase tracking-wider ${categoryStyle}`}
               >
                 {platform.category}
               </span>
@@ -85,7 +85,7 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
         </div>
 
         {/* Description */}
-        <p className="text-[0.8rem] leading-relaxed text-secondary line-clamp-2">
+        <p className="text-[0.92rem] leading-relaxed text-secondary line-clamp-2">
           {platform.description}
         </p>
 
@@ -94,7 +94,7 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
           {platform.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md bg-surface-light/60 border border-border/50 px-2 py-0.5 text-[0.6rem] font-mono text-muted uppercase tracking-wider"
+              className="rounded-md bg-surface-light/60 border border-border/50 px-2 py-0.5 text-[0.68rem] font-mono text-muted uppercase tracking-wider"
             >
               {tag}
             </span>
@@ -103,7 +103,7 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
 
         {/* Footer: Date */}
         <div className="flex items-center justify-between pt-3 border-t border-border/30">
-          <span className="text-[0.6rem] font-mono text-muted/60 tracking-wider">
+          <span className="text-[0.68rem] font-mono text-muted tracking-wider">
             Added {new Date(platform.dateAdded).toLocaleDateString("en-US", {
               month: "short",
               day: "numeric",
@@ -114,7 +114,7 @@ export default function PlatformCard({ platform }: { platform: Platform }) {
             href={platform.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[0.6rem] font-mono text-muted/40 hover:text-accent transition-colors uppercase tracking-wider"
+            className="text-[0.68rem] font-mono text-muted hover:text-accent transition-colors uppercase tracking-wider"
           >
             Visit →
           </a>
