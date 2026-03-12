@@ -11,8 +11,8 @@
   --surface-light: #1e293b;
   --border: #1e293b;
   --border-glow: rgba(6, 182, 212, 0.15);
-  --text-muted: #64748b;
-  --text-secondary: #94a3b8;
+  --text-muted: #8aa0b8;
+  --text-secondary: #c2d0df;
 }
 
 @theme inline {

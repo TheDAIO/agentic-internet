@@ -73,7 +73,7 @@ export default function Home() {
 
           {/* Stats ticker */}
           <div
-            className="fade-in-up mt-16 flex items-center justify-center gap-8 sm:gap-12 text-xs font-mono text-muted"
+            className="fade-in-up mt-16 flex items-center justify-center gap-8 sm:gap-12 text-sm font-mono text-muted"
             style={{ animationDelay: '0.7s' }}
           >
             <div className="flex flex-col items-center gap-1">
@@ -118,10 +118,10 @@ export default function Home() {
               <div className="flex items-center gap-4 min-w-0">
                 <div className="section-heading-line shrink-0" />
                 <div className="min-w-0">
-                  <h3 className="text-sm font-semibold text-foreground group-hover:text-accent-purple transition-colors">
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-accent-purple transition-colors">
                     Autonomous Product Studios
                   </h3>
-                  <p className="text-[0.75rem] text-muted mt-0.5 truncate">
+                  <p className="text-sm text-secondary mt-0.5 truncate">
                     AI agents building products with varying degrees of autonomy
                     — classified and verified.
                   </p>
@@ -129,7 +129,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-2 shrink-0">
-                <span className="text-[0.6rem] font-mono text-muted/60 uppercase tracking-wider hidden sm:inline">
+                <span className="text-[0.72rem] font-mono text-muted uppercase tracking-wider hidden sm:inline">
                   Explore
                 </span>
                 <svg
